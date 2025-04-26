@@ -54,7 +54,7 @@ const AuthForm: React.FC<AuthFormProps> = ({ isLogin }) => {
           title: "Welcome back!",
           description: "You've successfully logged in",
         });
-        navigate('/');
+        navigate('/dashboard');
       } else {
         const { error } = await supabase.auth.signUp({
           email,
